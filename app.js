@@ -10,5 +10,5 @@ app.get('/', function(req, res) {
 
 app.use('/', express.static(public));
 
-app.listen(8080);
-console.log(`Example app listening on port 8080!`)
+app.listen(6000);
+console.log(`Example app listening on port 6000!`)
