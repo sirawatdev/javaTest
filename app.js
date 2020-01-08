@@ -4,11 +4,15 @@ var path = require('path');
 var public = path.join(__dirname, 'public');
 
 // viewed at http://localhost:8080
-app.get('/', function(req, res) {
+app.get('/assets', function(req, res) {
     res.sendFile(path.join(public, 'index.html'));
 });
 
-app.use('/', express.static(public));
+app.get('/', function(req, res) {
+    res.send("Welcome to image assets serivce");
+});
 
-app.listen(6000);
-console.log(`Example app listening on port 6000!`)
+app.use('/assets', express.static(public));
+
+app.listen(1000);
+console.log(`Example app listening on port 1000!`)
