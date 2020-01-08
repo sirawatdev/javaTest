@@ -14,5 +14,5 @@ COPY . ./
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
+EXPOSE 6000
 CMD [ "npm", "start"]
