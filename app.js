@@ -14,5 +14,5 @@ app.get('/', function(req, res) {
 
 app.use('/assets', express.static(public));
 
-app.listen(1000);
-console.log(`Example app listening on port 1000!`)
+app.listen(6000);
+console.log(`Example app listening on port 6000!`)
