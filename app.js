@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/getimg', function(req, res) {
-    res.end(base64);
+    res.json(base64);
 });
 
 
